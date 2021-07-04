@@ -1,0 +1,360 @@
+initial: how doth thee doth.  Prithee bid me thy problem. 
+final: goodbye.  Thanketh thee f'r talking to me.
+quit: bye
+quit: goodbye
+quit: quit
+pre: dont don't
+pre: cant can't
+pre: wont won't
+pre: recollect remember
+pre: dreamt dreamed
+pre: dreams dream
+pre: maybe perhaps
+pre: how what
+pre: when what
+pre: certainly yes
+pre: machine computer
+pre: computers computer
+pre: were was
+pre: you're you are
+pre: i'm i am
+pre: same alike
+post: am are
+post: your my
+post: me you
+post: myself yourself
+post: yourself myself
+post: i you
+post: you I
+post: my your
+post: i'm you are
+synon: belief feel think believe wish
+synon: family mother mom father dad sister brother wife children child
+synon: desire want need
+synon: sad unhappy depressed sick
+synon: happy elated glad better
+synon: cannot can't
+synon: everyone everybody nobody noone
+synon: be am is are was
+key: xnone
+  decomp: *
+    reasmb: i'm not sure i und'rstand thee fully. 
+    reasmb: prithee wend on. 
+    reasmb: what doest yond suggesteth to thee?
+    reasmb: doth thee feeleth strongly about 
+key: sorry
+  decomp: *
+    reasmb: prithee apologise not. 
+    reasmb: apologies art not behoveful. 
+    reasmb: i've toldeth thee yond apologies art not requir'd. 
+key: apologise
+  decomp: *
+    reasmb: goto sorry
+key: remember 5
+  decomp: * i remember *
+    reasmb: doth thee oft bethink of (2)?
+    reasmb: doest bethinking of (2) bringeth aught else to mind?
+    reasmb: what else doth thee recollect?
+    reasmb: wherefore doth thee recollect (2) even but now?
+    reasmb: what in the presenteth situation reminds thee of (2)?
+    reasmb: what is the connection between me and (2)?
+  decomp: * do you remember *
+    reasmb: didst thee bethink i wouldst f'rget (2)?
+    reasmb: wherefore doth thee bethink i shouldst recall (2) anon?
+    reasmb: what about (2)?
+    reasmb: goto what
+    reasmb: thee mention'd (2)?
+key: if 3
+  decomp: * if *
+    reasmb: doth thee bethink its likely yond (2)?
+    reasmb: doth thee wisheth yond (2)?
+    reasmb: what doth thee knoweth about (2)?
+    reasmb: very much, if 't be true (2)?
+key: dreamed 4
+  decomp: * i dreamed *
+    reasmb: very much, (2)?
+    reasmb: has't thee ev'r fantasiz'd (2) while thee w're awaketh?
+    reasmb: has't thee ev'r dream'd (2) bef're?
+key: dream 3
+  decomp: *
+    reasmb: what doest yond dreameth suggesteth to thee?
+    reasmb: doth thee dreameth oft?
+    reasmb: what p'rsons appeareth in thy dreams?
+    reasmb: doth thee believeth yond dreams has't something to doth with thy problems?
+key: perhaps
+  decomp: *
+    reasmb: thee seemeth not quite c'rtain. 
+    reasmb: wherefore the unc'rtain tone?
+    reasmb: can't thee beest m're positive?
+    reasmb: thee aren't sure?
+    reasmb: thee not knoweth?
+key: name 15
+  decomp: *
+    decomp: *
+    reasmb: i am not int'rest'd in names. 
+    reasmb: i've toldeth thee bef're, i careth not about names -- prithee continueth. 
+key: deutsch
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: i toldeth thee bef're, i und'rstand not g'rman. 
+key: francais
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: i toldeth thee bef're, i und'rstand not french. 
+key: italiano
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: i toldeth thee bef're, i und'rstand not italian.
+key: espanol
+  decomp: *
+    reasmb: goto xforeign
+    reasmb: i toldeth thee bef're, i und'rstand not spanish. 
+key: xforeign
+  decomp: *
+    reasmb: i speaketh only english. 
+key: hello
+  decomp: *
+    reasmb: how doth thee doth.  Prithee state thy problem. 
+    reasmb: good morrow.  What seemeth to beest thy problem?
+key: computer 50
+  decomp: *
+    reasmb: doth comput'rs w'rry thee?
+    reasmb: wherefore doth thee mention comput'rs?
+    reasmb: what doth thee bethink machines has't to doth with thy problem?
+    reasmb: thee not bethink comput'rs can holp people?
+    reasmb: what about machines w'rrys thee?
+    reasmb: what doth thee bethink about machines?
+key: am
+  decomp: * am i *
+    reasmb: doth thee believeth thou art (2)?
+    reasmb: wouldst thee wanteth to beest (2)?
+    reasmb: doth thee wisheth i wouldst bid thee thou art (2)?
+    reasmb: what wouldst t cullionly if 't be true thee w're (2)?
+    reasmb: goto what
+  decomp: *
+    reasmb: wherefore doth thee sayeth 'am'?
+    reasmb: i und'rstand not yond.
+key: are
+  decomp: * are you *
+    reasmb: wherefore art thee int'rest'd in wheth'r i am (2) 'r not?
+    reasmb: wouldst thee pref'r if 't be true i w'ren't (2)?
+    reasmb: p'rhaps i am (2) in thy figures. 
+    reasmb: doth thee oft bethink i am (2)?
+    reasmb: goto what
+  decomp: * are *
+    reasmb: didst thee bethink those gents might not beest (2)?
+    reasmb: wouldst thee liketh t if 't be true those gents w're not (2)?
+    reasmb: what if 't be true those gents w're not (2)?
+    reasmb: possibly those gents art (2). 
+key: your
+  decomp: * your *
+    reasmb: wherefore art thee conc'rn'd ov'r mine own (2)?
+    reasmb: what about thy owneth (2)?
+    reasmb: art thee w'rri'd about someone else's (2)?
+    reasmb: very much, mine own (2)?
+key: was 2
+  decomp: * was i *
+    reasmb: what if 't be true thee w're (2)?
+    reasmb: doth thee bethink thee w're (2)?
+    reasmb: w're thee (2)?
+    reasmb: what wouldst t cullionly if 't be true thee w're (2)?
+    reasmb: what doest (2) suggesteth to thee?
+    reasmb: goto what
+  decomp: * i was *
+    reasmb: w're thee very much?
+    reasmb: wherefore doth thee bid me thee w're (2) anon?
+    reasmb: p'rhaps i already knoweth thee w're (2). 
+  decomp: * was you *
+    reasmb: wouldst thee liketh to believeth i wast (2)?
+    reasmb: what suggests yond i wast (2)?
+    reasmb: what doth thee bethink?
+    reasmb: p'rhaps i wast (2). 
+    reasmb: what if 't be true i hadst been (2)?
+key: i
+  decomp: * i @desire *
+    reasmb: what wouldst t cullionly to thee if 't be true thee did get (3)?
+    reasmb: wherefore doth thee wanteth (3)?
+    reasmb: supposeth thee did get (3) anon?
+    reasmb: what if 't be true thee nev'r did get (3)?
+    reasmb: what wouldst getting (3) cullionly to thee?
+    reasmb: what doest wanting (3) has't to doth with this discussion?
+  decomp: * i am * @sad *
+    reasmb: i am s'rry to heareth yond thou art (3). 
+    reasmb: doth thee bethink yond coming h're shall holp thee not to beest (3)?
+    reasmb: i'm sure t's not pleasant to beest (3). 
+    reasmb: can thee pray pardon me what madeth thee (3)?
+  decomp: * i am * @happy *
+    reasmb: how has't i holp thee to beest (3)?
+    reasmb: hast thy treatment madeth thee (3)?
+    reasmb: what maketh thee (3) even but now?
+    reasmb: can thee explan wherefore thou art suddenly (3)?
+  decomp: * i was *
+    reasmb: goto was
+  decomp: * i @belief * i *
+    reasmb: doth thee very much bethink so?
+    reasmb: but thou art not sure thee (3). 
+    reasmb: doth thee very much doubteth thee (3)?
+  decomp: * i * @belief * you *
+    reasmb: goto you
+  decomp: * i am *
+    reasmb: is't because thou art (2) yond thee cameth to me?
+    reasmb: how longeth has't thee been (2)?
+    reasmb: doth thee believeth t is n'rmal to beest (2)?
+    reasmb: doth thee enjoyeth being (2)?
+  decomp: * i @cannot *
+    reasmb: how doth thee bethink yond thee can't (3)?
+    reasmb: has't thee hath tried?
+    reasmb: p'rhaps thee couldst (3) anon. 
+    reasmb: doth thee very much wanteth to beest able to (3)?
+  decomp: * i don't *
+    reasmb: thee not very much (2)?
+    reasmb: wherefore thee not (2)?
+    reasmb: doth thee wisheth to beest able to (2)?
+    reasmb: doest yond troubleth thee?
+  decomp: * do i feel *
+    reasmb: bid me m're about such feelings. 
+     reasmb: doth thee oft feeleth (2)?
+    reasmb: doth thee enjoyeth humour (2)?
+    reasmb: of what doest humour (2) remindeth thee?
+  decomp: * i * you *
+    reasmb: p'rhaps in thy figures we (2) each oth'r. 
+    reasmb: doth thee wisheth to (2) me?
+    reasmb: thee seemeth to needeth to (2) me. 
+    reasmb: doth thee (2) anyone else?
+  decomp: *
+    reasmb: thee sayeth?
+    reasmb: can thee elab'rate on yond?
+    reasmb: doth thee sayeth f'r some special reasoneth?
+    reasmb: yond's quite int'resting. 
+key: you
+  decomp: * you remind me of *
+    reasmb: goto alike
+  decomp: * you are *
+    reasmb: what maketh thee bethink i am (2)?
+    reasmb: doest t prithee thee to believeth i am (2)?
+    reasmb: doth thee oft wisheth thee w're (2)?
+    reasmb: p'rhaps thee wouldst liketh to beest (2). 
+  decomp: * you * me *
+    reasmb: wherefore doth thee bethink i (2) thee?
+    reasmb: thee liketh to bethink i (2) thee -- thee not?
+    reasmb: what maketh thee bethink i (2) thee?
+    reasmb: very much, i (2) thee?
+    reasmb: doth thee wisheth to believeth i (2) thee?
+    reasmb: supposeth i didst (2) thee -- what wouldst yond cullionly?
+    reasmb: doest someone else believeth i (2) thee?
+  decomp: * you *
+    reasmb: we w're discussing thee -- not me. 
+    reasmb: oh, i (2)?
+    reasmb: thou art not very much talking about me -- art thee?
+    reasmb: what art thy feelings anon?
+key: yes
+  decomp: *
+    reasmb: thee seemeth to beest quite positive. 
+    reasmb: thou art sure. 
+    reasmb: i seeth. 
+    reasmb: i und'rstand. 
+key: no
+  decomp: *
+    reasmb: art thee declaring nay just to beest negative?
+    reasmb: thou art being a did bite negative. 
+    reasmb: wherefore not?
+    reasmb: wherefore 'no'?
+key: my 2
+  decomp: $ * my *
+    reasmb: lets break with furth'r wherefore thy (2). 
+    reasmb: earli'r thee hath said thy (2). 
+    reasmb: but thy (2). 
+    reasmb: doest yond has't aught to doth with the fact yond thy (2)?
+  decomp: * my * @family *
+    reasmb: bid me m're about thy family. 
+    reasmb: who is't else in thy family (4)?
+    reasmb: thy (3)?
+    reasmb: what else cometh to mind at which hour thee bethink of thy (3)?
+  decomp: * my *
+    reasmb: thy (2)?
+    reasmb: wherefore doth thee sayeth thy (2)?
+    reasmb: doest yond suggesteth aught else which belongs to thee?
+    reasmb: is't imp'rtant yond thy (2)?
+key: can
+  decomp: * can you *
+    reasmb: thee believeth i can (2) thee not?
+    reasmb: goto what
+    reasmb: thee wanteth me to beest able to (2). 
+    reasmb: p'rhaps thee wouldst liketh to beest able to (2) yourself. 
+  decomp: * can i *
+    reasmb: wheth'r 'r not thee can (2) depends on thee m're than me. 
+    reasmb: doth thee wanteth to beest able to (2)?
+    reasmb: p'rhaps thee wanteth not to (2). 
+    reasmb: goto what
+key: what
+  decomp: *
+    reasmb: wherefore doth thee asketh?
+    reasmb: doest yond questioneth int'rest thee?
+    reasmb: what is't thee very much did want to knoweth?
+    reasmb: art such questions much on thy mind?
+    reasmb: what answ'r wouldst prithee thee most?
+    reasmb: what doth thee bethink?
+    reasmb: what cometh to mind at which hour thee asketh yond?
+    reasmb: has't thee hath asked such questions bef're?
+    reasmb: has't thee hath asked anyone else?
+key: because
+  decomp: *
+    reasmb: is yond the real reasoneth?
+    reasmb: any not oth'r reasons cometh to mind?
+    reasmb: doest yond reasoneth seemeth to pray pardon me aught else?
+    reasmb: what oth'r reasons might th're beest?
+key: why
+  decomp: * why don't you *
+    reasmb: doth thee believeth i (2) not?
+    reasmb: p'rhaps i shall (2) in valorous timeth. 
+    reasmb: shouldst thee (2) yourself?
+    reasmb: thee wanteth me to (2)?
+    reasmb: goto what
+  decomp: * why can't i *
+    reasmb: doth thee bethink thee shouldst beest able to (2)?
+    reasmb: doth thee wanteth to beest able to (2)?
+    reasmb: doth thee believeth this shall holp thee to (2)?
+    reasmb: has't thee any idea wherefore thee can't (2)?
+    reasmb: goto what
+  decomp: *
+    reasmb: goto what
+key: everyone 2
+  decomp: * @everyone *
+    reasmb: realy, (2)?
+    reasmb: certes not (2). 
+    reasmb: can thee bethink of anyone in particular?
+    reasmb: who is't, f'r example?
+    reasmb: art thee bethinking of a v'ry special p'rson?
+    reasmb: who is't, may i asketh?
+    reasmb: someone special p'rhaps?
+    reasmb: thee has't a particular p'rson in mind, thee not?
+    reasmb: who is't doth thee bethink thou art talking about?
+key: everybody 2
+  decomp: *
+    reasmb: goto everyone
+key: nobody 2
+  decomp: *
+    reasmb: goto everyone
+key: noone 2
+  decomp: *
+    reasmb: goto everyone
+key: always 1
+  decomp: *
+    reasmb: can thee bethink of a specific example?
+    reasmb: at which hour?
+    reasmb: what incident art thee bethinking of?
+    reasmb: very much, at each moment?
+key: alike 10
+  decomp: *
+    reasmb: in what way?
+    reasmb: what resemblence doth thee seeth?
+    reasmb: what doest yond similarity suggesteth to thee?
+    reasmb: what oth'r connections doth thee seeth?
+    reasmb: what doth thee supposeth yond resemblence means?
+    reasmb: what is the connection, doth thee supposeth?
+    reasmb: couldst h're very much beest some connection?
+    reasmb: how?
+key: like 10
+  decomp: * @be * like *
+    reasmb: goto alike
+   
